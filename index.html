@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="logo">
+        <a href="" style="cursor: pointer;">
+          <svg viewBox="0 0 24 24" aria-hidden="true"
+            class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp">
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+              </path>
+            </g>
+          </svg>
+        </a>
+      </h1>
+      <div class="aside">
+        <ul class="aside__list">
+          <li class="aside__item">
+            <a href="" class="aside__link aside__link--active">Home</a>
+          </li>
+          <li class="aside__item">
+            <a href="" class="aside__link">Explore</a>
+          </li>
+          <li class="aside__item">
+            <a href="" class="aside__link">Notifications</a>
+          </li>
+          <li class="aside__item">
+            <a href="" class="aside__link">Messages</a>
+          </li>
+          <li class="aside__item">
+            <a href="" class="aside__link">Lists</a>
+          </li>
+          <li class="aside__item">
+            <a href="" class="aside__link">Communities</a>
+          </li>
+          <li class="aside__item">
+            <a href="" class="aside__link">Verified</a>
+          </li>
+        </ul>
+
+        <button type="button" class="aside_btnPost">Add post</button>
+      </div>
+
+    </header>
+
+    <main class="main">
+      <section class="news">
+
+
+        <div class="news__container">
+          <h2 class="news__title">Home</h2>
+          <ul class="news__categories">
+            <li class="news__categoriesItem news__categoriesItem--active">
+              <a href="" class="news__categoriesLink">For you</a>
+            </li>
+            <li class="news__categoriesItem">
+              <a href="" class="news__categoriesLink">Following</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="post__content">
+          <ul class="post__list">
+
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="followers">
+        <h3 class="followers__title"> Who to follow</h3>
+        <ul class="followers__list">
+
+        </ul>
+      </section>
+    </main>
+
+
+  </div>
+
+  <div class="modalAddPost">
+    <div class="content">
+      <span class="addPost__cross">X</span>
+      <h3 class="post__title">Add post</h3>
+      <form action="" class="formAddPost">
+        <div class="inputWrapper">
+          <label for="title">Post title</label>
+          <input type="text" id="title" class="formAddPost__title formPost__input">
+        </div>
+
+        <div class="inputWrapper">
+          <label for="body">Post body</label>
+          <textarea name="body" id="body" class="formAddPost__body formPost__input"></textarea>
+        </div>
+
+        <div class="inputWrapper">
+          <label for="name">Author name</label>
+          <input type="text" id="name" class="formAddPost__AutorName formPost__input">
+        </div>
+
+        <div class="inputWrapper">
+          <label for="email">Author email</label>
+          <input type="text" id="email" class="formAddPost__AutorEmail formPost__input">
+        </div>
+        <button type="submit" class="formAddPost__btn">Add</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modalWindow">
+    <div class="content">
+      <span class="cross">X</span>
+      <h3 class="post__title">Edit post</h3>
+      <form action="" class="formPost">
+        <div class="inputWrapper">
+          <label for="title">Post title</label>
+          <input type="text" id="title" class="formPost__title formPost__input">
+        </div>
+
+        <div class="inputWrapper">
+          <label for="body">Post body</label>
+          <textarea name="body" id="body" class="formPost__body formPost__input"></textarea>
+        </div>
+
+        <div class="inputWrapper">
+          <label for="name">Author name</label>
+          <input type="text" id="name" readonly  class="formPost__AutorName formPost__input">
+        </div>
+
+        <div class="inputWrapper">
+          <label for="email">Author email</label>
+          <input type="text" id="email" readonly class="formPost__AutorEmail formPost__input">
+        </div>
+        <button type="submit" class="formPost__btn">Edit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
