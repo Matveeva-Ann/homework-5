@@ -212,7 +212,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.followers__list, .post__list {
+.followers__list,
+.post__list {
   list-style: none;
 }
 
@@ -239,7 +240,8 @@
   text-align: end;
 }
 
-.post__authorName, .post__authorEmail {
+.post__authorName,
+.post__authorEmail {
   font-size: 12px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
@@ -276,7 +278,8 @@
   margin-top: 2px;
 }
 
-.modalWindow, .modalAddPost {
+.modalWindow,
+.modalAddPost {
   display: none;
   position: fixed;
   top: 0;
@@ -309,7 +312,8 @@
   margin-bottom: 20px;
 }
 
-.formPost, .formAddPost {
+.formPost,
+.formAddPost {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -350,7 +354,8 @@
   min-height: 150px;
 }
 
-.formPost__btn, .formAddPost__btn {
+.formPost__btn,
+.formAddPost__btn {
   cursor: pointer;
   border: none;
   outline: none;
@@ -360,14 +365,17 @@
   color: white;
   transition: all 250ms linear;
 }
-.formPost__btn:hover, .formAddPost__btn:hover {
+.formPost__btn:hover,
+.formAddPost__btn:hover {
   background-color: rgb(31, 31, 31);
 }
-.formPost__btn:active, .formAddPost__btn:active {
+.formPost__btn:active,
+.formAddPost__btn:active {
   transform: translate3d(0, 2px, 0);
 }
 
-.cross, .addPost__cross {
+.cross,
+.addPost__cross {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   position: absolute;
@@ -379,6 +387,18 @@
       -ms-user-select: none;
           user-select: none;
 }
-.cross:active, .addPost__cross:active {
+.cross:active,
+.addPost__cross:active {
   transform: translate3d(0, 2px, 0);
+}
+
+.unfilled {
+  cursor: auto;
+  background-color: rgba(31, 30, 30, 0.75);
+}
+.unfilled:hover {
+  background-color: rgba(31, 30, 30, 0.75);
+}
+.unfilled:active {
+  transform: translate3d(0, 0, 0);
 }/*# sourceMappingURL=style.css.map */

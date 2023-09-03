@@ -107,14 +107,14 @@
 
         <div class="inputWrapper">
           <label for="name">Author name</label>
-          <input type="text" id="name" class="formAddPost__AutorName formPost__input">
+          <input type="text" id="name" name="authorName" class="formAddPost__AutorName formPost__input">
         </div>
 
         <div class="inputWrapper">
           <label for="email">Author email</label>
-          <input type="text" id="email" class="formAddPost__AutorEmail formPost__input">
+          <input type="text" id="email" name="authorEmail" class="formAddPost__AutorEmail formPost__input">
         </div>
-        <button type="submit" class="formAddPost__btn">Add</button>
+        <button type="submit" class="formAddPost__btn unfilled">Add</button>
       </form>
     </div>
   </div>
@@ -136,12 +136,12 @@
 
         <div class="inputWrapper">
           <label for="name">Author name</label>
-          <input type="text" id="name" readonly  class="formPost__AutorName formPost__input">
+          <input type="text" id="name" name="authorName" readonly  class="formPost__AutorName formPost__input">
         </div>
 
         <div class="inputWrapper">
           <label for="email">Author email</label>
-          <input type="text" id="email" readonly class="formPost__AutorEmail formPost__input">
+          <input type="text" id="email" name="authorEmail" readonly class="formPost__AutorEmail formPost__input">
         </div>
         <button type="submit" class="formPost__btn">Edit</button>
       </form>
@@ -149,7 +149,7 @@
 
   </div>
 
-  <script src="./script.js"></script>
+  <script src="./script.js" type="module"></script>
 </body>
 
 </html>

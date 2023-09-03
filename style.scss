@@ -25,7 +25,7 @@
   padding: 5px;
   padding-left: 12px;
 }
-.aside{
+.aside {
   position: sticky;
   top: 60px;
 }
@@ -68,7 +68,7 @@
 
 .aside_btnPost {
   cursor: pointer;
-  
+
   width: 200px;
   height: 50px;
   padding: 0 32px;
@@ -85,7 +85,7 @@
   &:hover {
     background-color: rgb(25, 130, 200);
   }
-  &:active{
+  &:active {
     transform: translate3d(0, 2px, 0);
   }
 }
@@ -99,7 +99,7 @@
 
   border-left: 1px solid rgba(152, 152, 152, 0.353);
 }
-.news{
+.news {
   position: relative;
   border-right: 1px solid rgba(152, 152, 152, 0.353);
   width: 60%;
@@ -126,7 +126,7 @@
   justify-content: center;
   align-items: center;
   transition: background-color 150ms linear;
-  &:hover{
+  &:hover {
     background-color: rgba(172, 172, 172, 0.284);
   }
 }
@@ -142,7 +142,7 @@
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
 }
-.news__content{
+.news__content {
   width: 100%;
 }
 
@@ -167,97 +167,101 @@
     background-color: rgb(29, 155, 240);
   }
 }
-.icons{
+.icons {
   display: flex;
   justify-content: flex-end;
   gap: 30px;
   margin-top: 20px;
 }
-.icon{
+.icon {
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
   width: 18px;
   height: 18px;
 }
-.icon__delete{
+.icon__delete {
   background: url(./img/garbage.svg);
 }
-.icon__edit{
+.icon__edit {
   background: url(./img/edit\ \(1\).svg);
 }
-.icon__like{
+
+.icon__like {
   background: url(./img/like.svg);
 }
 
-.followers{
+.followers {
   margin-top: 20px;
   max-width: 390px;
   width: 40%;
   padding: 10px;
 }
-.followers__title{
+.followers__title {
   font-size: 20px;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.followers__list, .post__list{
+.followers__list,
+.post__list {
   list-style: none;
 }
 
-.post__item{
+.post__item {
   width: auto;
   height: auto;
   padding: 30px;
   border-bottom: 1px solid rgba(152, 152, 152, 0.353);
 }
-.post__itemImg{
+.post__itemImg {
   width: 100%;
   height: auto;
   margin-bottom: 10px;
 }
-.post__title{
+.post__title {
   margin: 0;
   margin-bottom: 10px;
 }
-.post_author{
+.post_author {
   margin-bottom: 15px;
   text-align: end;
 }
-.post__authorName, .post__authorEmail{
+.post__authorName,
+.post__authorEmail {
   font-size: 12px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   color: gray;
   margin-right: 5px;
 }
-.post__authorName{
+.post__authorName {
   font-weight: 600;
 }
-.followers__item{
+.followers__item {
   margin-top: 30px;
   width: auto;
   display: flex;
   align-items: center;
 }
-.followers__img{
+.followers__img {
   max-width: 40px;
   border-radius: 50%;
   margin-right: 20px;
 }
-.follow__name{
+.follow__name {
   font-size: 15px;
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
 }
-.follow__mail{
+.follow__mail {
   font-size: 15px;
   color: rgb(87, 87, 87);
   margin-top: 2px;
 }
 
-.modalWindow, .modalAddPost{
+.modalWindow,
+.modalAddPost {
   display: none;
   position: fixed;
   top: 0;
@@ -269,55 +273,57 @@
   align-items: center;
 }
 
-.displayFlex{
+.displayFlex {
   display: flex;
 }
-.content{
+.content {
   position: relative;
   width: 500px;
   height: auto;
   background-color: #ffff;
 }
-.content{
+.content {
   padding: 15px 20px 25px;
 }
-.post__title{
+.post__title {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
 }
-.formPost, .formAddPost{
+.formPost,
+.formAddPost {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.inputWrapper{
+.inputWrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.formPost__input{
+.formPost__input {
   padding: 5px 15px;
   border: 1px solid rgba(128, 128, 128, 0.326);
   outline: none;
-  &:focus{
+  &:focus {
     border: 1px solid blue;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
-  &:read-only{
+  &:read-only {
     background-color: rgba(128, 128, 128, 0.175);
   }
-  &:read-only:focus{
+  &:read-only:focus {
     border: 1px solid rgba(128, 128, 128, 0.326);
     box-shadow: none;
   }
 }
-.formPost__body{
+.formPost__body {
   resize: none;
   min-height: 150px;
 }
 
-.formPost__btn, .formAddPost__btn{
+.formPost__btn,
+.formAddPost__btn {
   cursor: pointer;
   border: none;
   outline: none;
@@ -326,14 +332,15 @@
   background-color: rgb(39, 38, 38);
   color: #ffff;
   transition: all 250ms linear;
-  &:hover{
-     background-color: rgb(31, 31, 31);
+  &:hover {
+    background-color: rgb(31, 31, 31);
   }
-  &:active{
+  &:active {
     transform: translate3d(0, 2px, 0);
   }
 }
-.cross, .addPost__cross{
+.cross,
+.addPost__cross {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   position: absolute;
@@ -341,7 +348,18 @@
   right: 10px;
   cursor: pointer;
   user-select: none;
-  &:active{
+  &:active {
     transform: translate3d(0, 2px, 0);
+  }
+}
+
+.unfilled {
+  cursor: auto;
+  background-color: rgb(31 30 30 / 75%);
+  &:hover {
+    background-color: rgb(31 30 30 / 75%);
+  }
+  &:active {
+    transform: translate3d(0, 0, 0);
   }
 }
